@@ -6,8 +6,7 @@
 .row-content{
     margin: 0px auto;
     padding: 50px 0px 50px 0px;
-    border-bottom: 1px ridge;
-    min-height: 400px;
+    min-height: 150px;
 }
 
 .footer{
@@ -17,14 +16,22 @@
 }
 
 .jumbotron{
-    padding: 30px 70px 30px 70px;
+    padding: 30px 50px 30px 50px;
     margin: 0px auto;
     background: #9575cd;
     color: floralwhite;
 }
 
-.address{
+address{
     font-size: 80%;
     color: #0f0f0f;
 }
 
+body{
+    padding: 50px 0px 0px 0px;
+    z-index: 0;
+}
+
+.navbar-dark{
+    background-color: #512da8;
+}
