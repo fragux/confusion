@@ -5,7 +5,8 @@
   "scripts": {
     "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lite": "lite-server"
+    "lite": "lite-server",
+    "scss": "node-sass -o css/ css/"
   },
   "repository": {
     "type": "git",
@@ -18,13 +19,15 @@
   },
   "homepage": "https://github.com/fragux/trabalho1#readme",
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "lite-server": "^2.6.1",
+    "node-sass": "^6.0.1"
   },
   "dependencies": {
     "bootstrap": "^4.0.0",
     "bootstrap-social": "^5.1.1",
     "fontawesome": "^4.7.0",
-    "less": "^4.1.1"
+    "less": "^4.1.1",
+    "uuid": "^8.3.2"
   },
   "description": ""
 }
