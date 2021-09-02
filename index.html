@@ -31,7 +31,7 @@
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
+                    <a id="#loginModal" class="login" style="text-decoration: none; cursor: pointer;">
                         <span class="fa fa-sign-in"></span>
                         Login
                     </a>
@@ -40,12 +40,12 @@
         </div>
     </nav>
     <div id="loginModal" class="modal fade" role="dialog">
-        <div class="modal-dialog modal-lg" role="content" data-placement="bottom">
+        <div class="modal-dialog modal-dialog-centered modal-ml" role="content" data-placement="middle">
             <!-- Modal content-->
-            <div class="modal-content col-12 col-sm-8 offset-md-2">
+            <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Login </h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button class="close" style="cursor: pointer;">&times;</button>
                 </div>
                 <div class="modal-body col-sm-12">
                     <form>
@@ -66,7 +66,7 @@
                                         <div class="btn-toolbar">
                                             <input class="form-check-input" type="checkbox">
                                             <label class="form-check-label"> Remember me</label>
-                                            <button type="button" class="btn btn-secondary btn-sm ml-auto margin-left" data-dismiss="modal" style="float:right;">Cancel</button>
+                                            <button type="button" class="btn btn-secondary btn-sm ml-auto margin-left cancel" style="float:right;">Cancel</button>
                                             <button type="submit" class="btn btn-primary btn-sm ml-1 margin-left" style="float:right;">Sign in</button>
                                         </div>                                              
                                     </div>                                                            
@@ -88,7 +88,7 @@
                     <img src="./img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm align-self-center">                                    
-                    <a href="#reserveModal" role="button" aria-pressed="true" type="button" class="btn btn-sm btn-warning col-md-12" data-toggle="modal" data-html="true" data-placement="bottom"><strong>Reserve Table</strong></a>
+                    <a href="#reserveModal" role="button" aria-pressed="true" type="button" class="btn btn-sm btn-warning col-md-12 reserve"><strong>Reserve Table</strong></a>
                 </div>
             </div>
         </div>
@@ -204,8 +204,8 @@
                 <!-- Modal content-->
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h4 class="modal-title bg-white text-black">Reserve Table </h4>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Reserve Table </h4>
+                        <button type="button" class="close">&times;</button>
                     </div>
                     <div class="modal-body col-sm-12">
                         <form>
@@ -273,7 +273,7 @@
                                 <div class="modal-footer">
                                     <div class="form-check"> 
                                         <div class="btn-toolbar">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                            <button type="button" class="btn btn-secondary cancel">Cancel</button>
                                             <button type="submit" class="btn btn-primary ml-1 margin-left" style="float:right;">Reserve</button>
                                         </div>
                                     </div>                                    
@@ -345,6 +345,30 @@
                     $("#carouselButton").children("span").addClass('fa-pause');                    
                 }
             });
+    </script>
+    <script>
+       
+       $(document).ready(function(){
+            $("a.login").on('click', function () {
+                $('#loginModal').modal('show');
+                $("button.close").on('click', function(){
+                    $('#loginModal').modal('hide');
+                })
+                $("button.cancel").on('click', function(){
+                    $('#loginModal').modal('hide');
+                })
+            })
+            $("a.btn.reserve").on('click', function () {
+                $('#reserveModal').modal('show');
+                $("button.close").on('click', function(){
+                    $('#reserveModal').modal('hide');
+                })
+                $("button.cancel").on('click', function(){
+                    $('#reserveModal').modal('hide');
+                })
+            })
+        });
+    
     </script>
     
   <!-- <script>
