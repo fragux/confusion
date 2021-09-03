@@ -27,12 +27,16 @@
   "homepage": "https://github.com/fragux/trabalho1#readme",
   "devDependencies": {
     "cssmin": "^0.4.3",
+    "grunt": "^1.4.1",
+    "grunt-sass": "^3.1.0",
     "htmlmin": "^0.0.7",
+    "jit-grunt": "^0.10.0",
     "lite-server": "^2.6.1",
     "node-sass": "^6.0.1",
     "onchange": "^7.1.0",
     "parallelshell": "^3.0.2",
     "rimraf": "^2.6.2",
+    "time-grunt": "^2.0.0",
     "uglify-js": "^3.14.1",
     "uglifyjs": "^2.4.11",
     "usemin-cli": "^0.0.7"
