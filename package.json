@@ -26,12 +26,14 @@
   },
   "homepage": "https://github.com/fragux/trabalho1#readme",
   "devDependencies": {
+    "bootstrap": "^4.0.0",
     "cssmin": "^0.4.3",
     "grunt": "^1.4.1",
     "grunt-sass": "^3.1.0",
     "htmlmin": "^0.0.7",
     "jit-grunt": "^0.10.0",
     "lite-server": "^2.6.1",
+    "minimatch": "^3.0.4",
     "node-sass": "^6.0.1",
     "onchange": "^7.1.0",
     "parallelshell": "^3.0.2",
@@ -42,10 +44,14 @@
     "usemin-cli": "^0.0.7"
   },
   "dependencies": {
-    "bootstrap": "^4.0.0",
+    "@types/urix": "^0.1.0",
     "bootstrap-social": "^5.1.1",
+    "browser-sync": "^2.27.5",
     "fontawesome": "^4.7.0",
+    "gulp": "^4.0.2",
+    "jquery": "^3.3.1",
     "less": "^4.1.1",
+    "popper.js": "^1.16.1",
     "uuid": "^8.3.2"
   },
   "description": ""
